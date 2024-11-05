@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="coffeedessert.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 class="h03">LET'S DRINK COFFEE AND CHILL</h3>
+
+    <div id="d1">
+      <img src="logoulit.png" alt="try" class="logo1" />
+      <table class="tbl1">
+        <tr>
+          <th class="th1"><a href="home.html">HOME</a></th>
+          <th class="th2"><a href="menu.html#dprod1" class="menu">MENU</a></th>
+          <th class="th3"><a href="home.html#d6">ABOUT</a></th>
+          <th class="th4"><a href="home.html#d8">CONTACT US</a></th>
+        </tr>
+      </table>
+    </div>
+    <img src="PINOYB.png" alt="1" class="pbb1" />
+
+    <div id="dprod1">
+      <h1 class="classich1">CHOCOLATE & DESSERT COFFEES</h1>
+
+      <div class="sidemenuo">
+        <div class="sidemenuo2">
+          <h1 class="hm01">
+            <a href="menu.html#dprod1">MENU OVERVIEW</a>
+          </h1>
+          <h1 class="hm02"><a href="hotbrew.html#dprod1">HOT BREW</a></h1>
+          <h1 class="hm03">
+            <a href="coffeedessert.html#dprod1" class="active"
+              >CHOCO & DESSERT
+            </a>
+          </h1>
+          <h1 class="hm04"><a href="iceblend.html#dprod1">ICE BLEND</a></h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- dprodpic1 section -->
+    <div class="dprodpic1" id="dprodpic1">
+      <a href="#modal-dprodpic1">
+        <p class="pn1">
+          Affogato <br />
+          &#9733; &#9733; &#9733; &#9733; &#9733; <br />
+          &#8369;149.00 (grande)
+        </p>
+        <img src="frontp2.png" alt="Iced Cappuccino" class="pc1" />
+      </a>
+    </div>
+    <div id="modal-dprodpic1" class="modal">
+      <div class="modal-content">
+        <a href="#dprod1" class="close">&times;</a>
+        <div class="modal-flex">
+          <div class="modal-text">
+            <h1>Affogato</h1>
+            <p>
+              Ingredients: Espresso, Vanilla Ice Cream, Optional Sweetener ,
+              Optional Topping
+            </p>
+            <p>
+              &#9733; &#9733; &#9733; &#9733; &#9733; <br />TALL &#8369;119|
+              GRANDE &#8369;149 | VENTI &#8369;179
+            </p>
+            <a href="3affogato.html"><button id="b1">Order Now</button></a>
+          </div>
+          <div class="tabs">
+            <div class="tablink" onclick="showTab(1)">
+              <img src="pic1.png" alt="Image 1" />
+            </div>
+            <div class="tablink" onclick="showTab(2)">
+              <img src="pic1.1.png" alt="Image 2" />
+            </div>
+            <div class="tablink" onclick="showTab(3)">
+              <img src="pic1.2.png" alt="Image 3" />
+            </div>
+            <div class="tablink" onclick="showTab(4)">
+              <img src="lastcuppic.png" alt="Image 4" />
+            </div>
+          </div>
+          <div class="tabcontent">
+            <div id="content1" class="content" style="display: block">
+              <img src="pic1.png" alt="Image 1" class="modal-img" />
+            </div>
+            <div id="content2" class="content" style="display: none">
+              <img src="pic1.1.png" alt="Image 2" class="modal-img" />
+            </div>
+            <div id="content3" class="content" style="display: none">
+              <img src="pic1.2.png" alt="Image 3" class="modal-img" />
+            </div>
+            <div id="content4" class="content" style="display: none">
+              <img src="lastcuppic.png" alt="Image 4" class="modal-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showTab(tabIndex) {
+        const contents = document.querySelectorAll(".content");
+        contents.forEach((content, index) => {
+          content.style.display = index === tabIndex - 1 ? "block" : "none";
+        });
+      }
+
+      // Add event listeners for modals
+      document.querySelectorAll(".modal").forEach((modal) => {
+        modal.addEventListener("open", () => {
+          showTab(1); // Show the first tab by default
+        });
+      });
+    </script>
+    <!-- dprodpic2 section -->
+    <div class="dprodpic2" id="dprodpic2">
+      <a href="#modal-dprodpic2">
+        <p class="pn2">
+          Hot Chocolate <br />
+          &#9733; &#9733; &#9733; &#9733; &#9733; <br />
+          &#8369;149.00 (grande)
+        </p>
+        <img src="frontp1.png" alt="Iced Espresso" class="pc2" />
+      </a>
+    </div>
+
+    <div id="modal-dprodpic2" class="modal">
+      <div class="modal-content">
+        <a href="#dprod1" class="close">&times;</a>
+        <div class="modal-flex">
+          <div class="modal-text">
+            <h1>Hot Chocolate</h1>
+            <p>
+              Ingredients: Milk, Cocoa Powder, Sugar, Vanilla Extract, Chocolate
+              Shavings and Marshmallows
+            </p>
+            <p>
+              &#9733; &#9733; &#9733; &#9733; &#9733; <br />
+              TALL &#8369;119| GRANDE &#8369;149 | VENTI &#8369;179
+            </p>
+            <a href="4hotchoco.html"><button id="b2">Order Now</button></a>
+          </div>
+          <div class="tabs">
+            <div class="tablink" onclick="showTab(5)">
+              <img src="pic2.png" alt="Image 1" />
+            </div>
+            <div class="tablink" onclick="showTab(6)">
+              <img src="pic2.1.png" alt="Image 2" />
+            </div>
+            <div class="tablink" onclick="showTab(7)">
+              <img src="pic2.2.png" alt="Image 3" />
+            </div>
+            <div class="tablink" onclick="showTab(8)">
+              <img src="lastcuppic.png" alt="Image 4" />
+            </div>
+          </div>
+          <div class="tabcontent">
+            <div id="content5" class="content" style="display: block">
+              <img src="pic2.png" alt="Image 1" class="modal-img" />
+            </div>
+            <div id="content6" class="content" style="display: none">
+              <img src="pic2.1.png" alt="Image 2" class="modal-img" />
+            </div>
+            <div id="content7" class="content" style="display: none">
+              <img src="pic2.2.png" alt="Image 3" class="modal-img" />
+            </div>
+            <div id="content8" class="content" style="display: none">
+              <img src="lastcuppic.png" alt="Image 4" class="modal-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

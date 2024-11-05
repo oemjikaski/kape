@@ -1,0 +1,362 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 class="h03">LET'S DRINK COFFEE AND CHILL</h3>
+
+    <div id="d1">
+      <a href="login.html"> <img src="icon.png" alt="icon" class="icon" /></a>
+      <img src="logoulit.png" alt="try" class="logo1" />
+      <table class="tbl1">
+        <tr>
+          <th class="th1"><a href="home.html" class="active">HOME</a></th>
+          <th class="th2"><a href="menu.html#dprod1" class="menu">MENU</a></th>
+          <th class="th3"><a href="home.html#d6">ABOUT</a></th>
+          <th class="th4"><a href="home.html#d8">CONTACT US</a></th>
+        </tr>
+      </table>
+    </div>
+    <img src="PINOYB.png" alt="1" class="pbb1" />
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="BG 11.png" style="width: 100%" />
+        <div class="text">Drink coffee a day; it takes stress away</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="BG 01.png" style="width: 100%" />
+        <div class="text">Ang sherep</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="BG 001.png" style="width: 100%" />
+        <div class="text">APT APT</div>
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active1", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <div id="d2">
+      <h2 class="h201">
+        At Pinoy Big Brew-ther, we believe that every cup of coffee tells a
+        story. Founded by a passionate team of coffee lovers, our mission is to
+        bring the finest, sustainably sourced beans from around the world to
+        your home.
+        <img src="imghome1.jpg" alt="picpic" class="imghome1" />
+      </h2>
+    </div>
+
+    <div id="d3">
+      <a href="menu.html#dprod1"
+        ><p class="homemenu">Check more coffees &#8594;</p></a
+      >
+      <h1 class="h102">The Big FOUR</h1>
+      <h3 class="h302">Best-Selling Coffees</h3>
+    </div>
+
+    <div class="dprodpic1">
+      <p class="pn1">
+        Hot Chocolate<br />
+        &#9733; &#9733; &#9733; &#9733; &#9733;
+      </p>
+      <div class="container">
+        <img src="frontp1.png" alt="Avatar" class="image" />
+        <img src="frontp01.png" alt="Avatar Hover" class="image-hover" />
+      </div>
+    </div>
+
+    <div class="dprodpic2">
+      <p class="pn2">
+        Affogato<br />
+        &#9733; &#9733; &#9733; &#9733; &#9733;
+      </p>
+      <div class="container2">
+        <img src="frontp2.png" alt="Avatar" class="image2" />
+        <img src="frontp02.png" alt="Avatar Hover" class="image-hover2" />
+      </div>
+    </div>
+
+    <div class="dprodpic3">
+      <p class="pn3">
+        Iced Cappuccino<br />
+        &#9733; &#9733; &#9733; &#9733; &#9733;
+      </p>
+      <div class="container3">
+        <img src="frontp3.png" alt="Avatar" class="image3" />
+        <img src="frontp03.png" alt="Avatar Hover" class="image-hover3" />
+      </div>
+    </div>
+
+    <div class="dprodpic4">
+      <p class="pn4">
+        Iced Espresso<br />
+        &#9733; &#9733; &#9733; &#9733; &#9733;
+      </p>
+      <div class="container4">
+        <img src="frontp4.png" alt="Avatar" class="image4" />
+        <img src="frontp04.png" alt="Avatar Hover" class="image-hover4" />
+      </div>
+    </div>
+
+    <div id="d5">
+      <h1 class="d5h1">Grab a cup that</h1>
+      <h1 class="d5h12">fits your vibe</h1>
+      <h2 class="d5h2">size</h2>
+      <h2 class="d5h22">matters!</h2>
+
+      <p class="tallp">
+        The tall-sized cup is designed to enhance your coffee experience,
+        offering ample space for a generous serving of your favorite brew.
+      </p>
+      <h1 class="tallh1">
+        Tall size <br />
+        12oz
+      </h1>
+      <p class="grandep">
+        The grande cup is the perfect choice for coffee lovers who crave a
+        satisfying, medium-sized serving. With a capacity of 16 ounces,
+      </p>
+      <h1 class="grandeh1">
+        Grande size <br />
+        16oz
+      </h1>
+      <p class="ventip">
+        The venti cup is a favorite among coffee enthusiasts, offering a
+        generous 22-ounce capacity for those who enjoy a larger serving.
+      </p>
+      <h1 class="ventih1">
+        Venti size <br />
+        22oz
+      </h1>
+      <img src="grandesize.png" alt="grande" class="sgrande" />
+      <img src="tallsize.png" alt="tall" class="stall" />
+      <img src="ventisize.png" alt="venti" class="sventi" />
+
+      <div id="d52nd"></div>
+    </div>
+
+    <div class="image1container">
+      <h1 class="img1h1">Coffee made with Love</h1>
+
+      <a href="menu.html#dprod1"
+        ><h2 class="img1h2">Check the flavors &#8594;</h2></a
+      >
+      <h1 class="img2h1">Made for no lovelife</h1>
+      <a href="menu.html#dprod1"
+        ><h2 class="img2h2">Check the flavors &#8594;</h2></a
+      >
+
+      <img src="coffeepi.png" alt="Description" class="img1" />
+      <img src="doctor1.png" alt="Description" class="img2" />
+    </div>
+
+    <div id="d6">
+      <img src="logouliT.png" alt="logo" class="logo2" />
+      <h1 class="d6h1">ABOUT US</h1>
+
+      <p class="aboutusp">
+        Welcome to Pinoy Big Brew-ther, a coffee website inspired by the beloved
+        Filipino reality show, Pinoy Big Brother, from its 11th season. Just as
+        the show showcases housemates striving for a spot in the prestigious Big
+        Four, our site celebrates the top four standout coffees that capture the
+        essence of Filipino culture and flavor. At Pinoy Big Brew-ther, we
+        believe that every cup of coffee tells a story, much like the housemates
+        competing for their dreams. Our selection features the finest brews that
+        not only delight the palate but also embody the spirit of camaraderie
+        and competition, inviting coffee lovers to experience their own journey
+        towards finding the perfect cup. Join us as we elevate your coffee
+        experience with our carefully curated Big Four coffees, each crafted to
+        bring a taste of home to every sip.
+      </p>
+    </div>
+
+    <div id="d7">
+      <h1 class="d7h1">The new and improved in taste coffees!</h1>
+      <p class="d7p1">
+        Iced Cappucino <br />
+        &#8369; 149.00
+      </p>
+      <p class="d7p2">
+        Iced Espresso <br />
+        &#8369; 149.00
+      </p>
+
+      <p class="d7p3">
+        Iced Chai Latte <br />
+        &#8369; 149.00
+      </p>
+
+      <p class="d7p4">
+        Hot Chocolate <br />
+        &#8369; 149.00
+      </p>
+
+      <p class="d7p5">
+        Espresso <br />
+        &#8369; 149.00
+      </p>
+
+      <p class="d7p6">
+        Affogato <br />
+        &#8369; 149.00
+      </p>
+
+      <p class="d7p7">
+        Cappuccino <br />
+        &#8369; 149.00
+      </p>
+    </div>
+    <div id="d8">
+      <div class="d9">
+        <h3 class="d9h2">OTHER CONTACTS</h3>
+        <h4 class="d9h4">
+          FACEBOOK <br />
+          <br />
+          <br /><br />
+          INSTAGRAM <br />
+          <br /><br />
+          <br />
+          TWITTER
+        </h4>
+
+        <p class="p01">
+          <a href="https://www.facebook.com/jaymiekaski">pbbjaymielei@fb.com</a>
+        </p>
+        <p class="p02">
+          <a
+            href="https://www.instagram.com/_babyleiii/profilecard/?igsh=cmN0MG9md3M3dzM3"
+            >pbbjaymielei@ig.com</a
+          >
+        </p>
+
+        <p class="p03">
+          <a href="https://x.com/pbbabscbn?s=21&t=77g_flc85LoGmUnRDQyBjw"
+            >pbbjaymielei@twitter.com</a
+          >
+        </p>
+
+        <p class="p1">
+          <a href="home.html">Pinoy Big Brew-ther</a> &#8594; Submit a request
+          <br />
+          Let’s gather some details.
+        </p>
+
+        <div class="d92">
+          <form id="contactForm" onsubmit="return handleSubmit(event);">
+            <label for="email" class="email">Your email address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="mariajuanamapagmahal@example.com"
+            />
+
+            <label for="name">Name:</label>
+            <div class="name-container">
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                placeholder="First Name"
+                class="name-input"
+              />
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                required
+                placeholder="Last Name"
+                class="name-input"
+              />
+            </div>
+            <h1 class="d8h01">CONTACT US</h1>
+
+            <label for="subject" class="subject"
+              >What can we help you with?</label
+            >
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="return">Return</option>
+              <option value="online order">Online Order</option>
+              <option value="general question">General Question</option>
+              <option value="product question">Product Question</option>
+              <option value="product issue">Product Issue</option>
+              <option value="website issue">Website Issue</option>
+            </select>
+
+            <label for="description" class="desc">Description</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              required
+              placeholder="Please describe your issue..."
+            ></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault(); // Prevent the default form submission
+        alert("Your feedback is submitted"); // Show the alert
+        document.getElementById("contactForm").reset(); // Optionally reset the form
+        return false; // Prevent any further action
+      }
+    </script>
+
+    <footer id="d10">
+      <h3 class="d10h31">PINOY BIG BREW-THER</h3>
+      <h3 class="d10h32">COMPANY</h3>
+      <h3 class="d10h33">MORE</h3>
+      <a href="home.html#d6"><h4 class="d10h41">OUR BRAND</h4></a>
+
+      <a href="menu.html#dprod1"><h4 class="d10h42">OUR COFFEE</h4></a>
+
+      <a href="home.html#d8"><h4 class="d10h43">CONTACT</h4></a>
+
+      <h4 class="d10h44">
+        &copy; 2024 PINOY BIG BREW-THER ASOSASYON. ALL RIGHTS RESERVED
+      </h4>
+    </footer>
+  </body>
+</html>

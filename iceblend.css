@@ -1,0 +1,485 @@
+.modal-content {
+  display: flex; /* Use flexbox for modal content */
+  flex-direction: column; /* Stack elements vertically */
+  width: 900px; /* Keep this width */
+  height: 450px; /* Keep this height */
+}
+
+.modal-img {
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.content {
+  margin-top: 30px;
+}
+
+#content1 img,
+#content2 img,
+#content3 img,
+#content4 img,
+#content5 img,
+#content6 img,
+#content7 img,
+#content8 img,
+#content9 img,
+#content10 img,
+#content11 img,
+#content12 img {
+  width: 400px; /* Set width to match the image */
+  height: 300px; /* Set height to match the image */
+}
+
+.modal-flex {
+  position: absolute;
+  margin-left: 50px;
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Space between children */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.tabs {
+  position: relative;
+  margin-left: -400px;
+  margin-top: 280px;
+  order: 1; /* Set order for the tabs (left side) */
+}
+
+.modal-text {
+  position: absolute;
+  margin-left: 460px;
+  text-align: left; /* Align text to the left */
+  flex: 1; /* Allow this div to grow and fill space */
+  order: 2; /* Set order for the text (right side) */
+  width: 300px;
+}
+#b1,
+#b2,
+#b3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  background-color: #1a3842;
+}
+
+a #b1:hover,
+a #b2:hover,
+a #b3:hover {
+  background-color: rgb(156, 20, 20);
+  color: white;
+}
+
+.tabs {
+  margin-bottom: 20px; /* Space between tabs and content */
+}
+
+.tablink {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 5px; /* Space between tabs */
+}
+
+.tablink img {
+  width: 70px; /* Adjust size of thumbnail */
+  height: auto;
+  border: 2px solid transparent; /* Default border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.tablink img:hover {
+  border-color: blue; /* Highlight on hover */
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  top: 0; /* Stay on top */
+  left: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+  z-index: 2000; /* Higher z-index to ensure it’s on top */
+  opacity: 0; /* Invisible */
+  transition: opacity 0.3s ease; /* Fade-in effect */
+}
+
+.modal:target {
+  display: block; /* Show modal when targeted */
+  opacity: 1; /* Fully visible */
+}
+
+.modal-content {
+  position: relative; /* Position relative to modal */
+  margin: 70px auto; /* Center the modal */
+  margin-top: 100px;
+  padding: 20px;
+  width: 850px; /* Modal width */
+  height: 370px;
+  background: #f2fefe; /* Modal background color */
+  text-align: center; /* Centered text */
+  border-radius: 10px; /* Rounded corners */
+  z-index: 3000; /* Ensure content is above the overlay */
+}
+
+.modal-content img.modal-img {
+  width: 215px; /* Set width */
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  max-height: 240px; /* Optional: Limit maximum height */
+  object-fit: cover; /* Maintain aspect ratio while covering */
+}
+
+.modal button {
+  padding: 10px 20px;
+  background-color: #e27802;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: red;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.h03 {
+  color: white;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: -85px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  height: 18px;
+  width: 1230px;
+  background-color: #3f5d68;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 25px;
+  letter-spacing: 3px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.tbl1 th {
+  height: 40px; /* Height for better visual appearance */
+  width: 100px;
+  padding: 35px; /* Remove padding for better centering */
+  border-radius: 30px;
+  font-weight: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.tbl1 a {
+  display: inline-block; /* Ensures width and height are respected */
+  height: 100%; /* Matches the th height */
+  width: 110%; /* Matches the th width */
+  color: #002c3c;
+  text-decoration: none;
+  line-height: 40px; /* Centers text vertically */
+  transition: background-color 0.3s; /* Smooth transition */
+  border-radius: 5px;
+}
+
+.tbl1 a:hover {
+  color: white;
+  background-color: #002c3c;
+  border-radius: 5px;
+}
+
+.tbl1 {
+  position: absolute;
+  margin-left: 320px;
+  margin-top: -5px;
+}
+#d1 {
+  width: 1259px;
+  height: 100px;
+  margin-left: -10px;
+  margin-top: 88px;
+  position: sticky;
+  background-attachment: fixed;
+  display: block;
+  z-index: 1200; /* or another high value */
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid #1f1f54;
+}
+.logo1 {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  margin-left: 150px;
+  margin-top: -22px;
+  clip: rect(4px, 130px, 121px, 0px);
+}
+
+.pbb1 {
+  margin-top: -160px;
+  margin-left: 430px;
+  width: 400px;
+  height: 80px;
+  position: absolute;
+  clip: rect(15px, 400px, 58px, 0px);
+}
+
+.menubutton {
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 850px;
+  color: #0f2e3d;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  padding-top: 15px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px #0f2e3d;
+}
+a .menubutton:hover {
+  background-color: #0f2e3d;
+  color: white;
+  box-shadow: 2px 2px 2px black;
+}
+
+#dprod1 {
+  width: 1259px;
+  height: 610px;
+  margin-left: -10px;
+  margin-top: 0px;
+  position: absolute;
+  background-color: #f2fefe;
+}
+
+.sidemenuo {
+  width: 259px;
+  height: 380px;
+  margin-left: 10px;
+  position: sticky; /* Keeps it absolute */
+  display: block;
+  top: 10px; /* Adjust based on your layout */
+  z-index: 1000; /* Ensure it appears above other content */
+  background-color: #f2fefe;
+  background-attachment: scroll;
+}
+.sidemenuo2 {
+  width: 209px;
+  height: 240px;
+  margin-left: 50px;
+  position: absolute; /* Change to fixed to scroll with the page */
+  display: block;
+  top: 180px; /* Adjust to position it as desired */
+  z-index: 1100; /* Higher z-index to ensure it's above .sidemenuo */
+  background-color: #f2fefe;
+  background-attachment: fixed; /* This can remain if you need a fixed background */
+}
+
+.hm01 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: absolute;
+  width: 140px;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.hm02 {
+  font-weight: bold;
+  position: absolute;
+  margin-top: 85px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: absolute;
+  width: 140px;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+#dprod1 a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  position: absolute;
+  font-size: 16px;
+  color: #0f2e3d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: absolute;
+  width: 150px;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+#dprod1 a:hover {
+  text-decoration: none;
+  color: #0f2e3d;
+  background-color: #ddd; /* Change background color on hover */
+}
+
+#dprod1 a.active {
+  background-color: #0f2e3d;
+  color: white;
+}
+
+.hm03 {
+  position: absolute;
+  margin-top: 128px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: absolute;
+  width: 140px;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.hm04 {
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: absolute;
+  width: 140px;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+}
+.dprodpic1 {
+  margin-left: 330px;
+  margin-top: 230px;
+  height: 270px;
+  width: 230px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 7px rgb(139, 139, 139);
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+}
+
+.dprodpic1:hover {
+  transform: translateY(-10px);
+}
+
+.dprodpic1 img {
+  height: 205px;
+  width: 230px;
+  position: absolute;
+}
+
+.dprodpic1 .pn1 {
+  font-size: 15.5px;
+  color: #0f2e3d;
+  margin-left: 5px;
+  margin-top: 208px;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.dprodpic2 {
+  margin-left: 612px;
+  margin-top: -270px;
+  height: 270px;
+  width: 230px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 7px rgb(139, 139, 139);
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+}
+
+.dprodpic2:hover {
+  transform: translateY(-10px);
+}
+
+.dprodpic2 img {
+  height: 205px;
+  width: 230px;
+  position: absolute;
+}
+
+.dprodpic2 .pn2 {
+  font-size: 15.5px;
+  color: #0f2e3d;
+  margin-left: 5px;
+  margin-top: 208px;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.dprodpic3 {
+  margin-left: 895px;
+  margin-top: -270px;
+  height: 270px;
+  width: 230px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 7px rgb(139, 139, 139);
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+}
+
+.dprodpic3:hover {
+  transform: translateY(-10px);
+}
+
+.dprodpic3 img {
+  height: 205px;
+  width: 230px;
+  position: absolute;
+}
+
+.dprodpic3 .pn3 {
+  font-size: 15.5px;
+  color: #0f2e3d;
+  margin-left: 5px;
+  margin-top: 208px;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+
+.classich1 {
+  font-size: 27px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 125px;
+  position: absolute;
+  margin-left: 55px;
+  letter-spacing: 3px;
+  width: 1200px;
+  text-align: center;
+}

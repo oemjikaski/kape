@@ -1,0 +1,457 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      .d1 {
+        display: flex;
+        width: 530px;
+        background-color: rgb(255, 255, 255);
+        height: 400px;
+        margin-top: 100px;
+        margin-left: 90px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .d2 {
+        display: flex;
+        width: 540px;
+        background-color: rgb(212, 212, 212);
+        height: 310px;
+        margin-top: -400px;
+        margin-left: 630px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .fn {
+        width: 220px;
+        margin-top: 17px;
+        margin-left: 30px;
+        position: absolute;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      #firstname {
+        width: 200px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 47px;
+        margin-left: 35px;
+      }
+
+      #lastname {
+        width: 200px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 47px;
+        margin-left: 15px;
+      }
+
+      .cfh21 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        margin-top: 50px;
+        margin-left: 115px;
+      }
+      input[type="text"].number-field {
+        width: 160px;
+      }
+
+      .address {
+        width: 220px;
+        margin-top: 97px;
+        margin-left: -422px;
+        position: absolute;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      #address {
+        width: 420px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 50px;
+        margin-left: 35px;
+      }
+
+      .email {
+        width: 220px;
+        margin-top: 102px;
+        margin-left: -422px;
+        position: absolute;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      #email {
+        width: 420px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 50px;
+        margin-left: 35px;
+      }
+
+      .img1 {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        position: absolute;
+        margin-top: 95px;
+        margin-left: 30px;
+        border-radius: 10px;
+      }
+
+      .d2h21 {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 200px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        width: 300px;
+      }
+
+      .pname {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 140px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      #cupsize {
+        height: 27px;
+        width: 125px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 110px;
+        margin-left: 265px;
+      }
+
+      .summarysection {
+        margin-left: -290px;
+      }
+
+      .summarysection {
+        margin-top: 20px; /* Add space above summary section */
+      }
+
+      .summary-row {
+        display: flex; /* Use flexbox to align items in a row */
+        align-items: center; /* Center items vertically */
+      }
+
+      .summary-row label {
+        margin-right: 10px; /* Space between label and total */
+      }
+
+      .payment-row {
+        margin-top: 10px; /* Spacing for each row */
+      }
+
+      #change {
+        width: 90px;
+        margin-left: 280px;
+        margin-top: -20px;
+      }
+      #amount {
+        width: 100px;
+      }
+
+      .change {
+        margin-left: 40px;
+      }
+
+      .btn1 {
+        background-color: green;
+        color: white;
+        height: 27px;
+        width: 100px;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 270px;
+        cursor: pointer;
+      }
+
+      .btn2 {
+        background-color: rgb(165, 31, 31);
+        height: 27px;
+        width: 100px;
+        padding: 6px;
+        color: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        position: absolute;
+        margin-top: 220px;
+        margin-left: -45px;
+        cursor: pointer;
+      }
+
+      .p1 {
+        position: absolute;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 90px;
+        margin-left: 275px;
+      }
+
+      .totaldesc {
+        position: absolute;
+        margin-top: 160px;
+        margin-left: 325px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .total {
+        position: absolute;
+        margin-top: 205px;
+        margin-left: 320px;
+      }
+
+      #total-display {
+        width: 100px;
+      }
+
+      .change {
+        position: absolute;
+        margin-top: 152px;
+        margin-left: 310px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      #change {
+        position: absolute;
+        margin-top: 152px;
+        margin-left: 380px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .amount {
+        position: absolute;
+        margin-top: 124px;
+        margin-left: 170px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #amount {
+        position: absolute;
+        margin-top: 120px;
+        margin-left: 290px;
+        height: 24px;
+        width: 130px;
+      }
+
+      .payment {
+        position: absolute;
+        margin-top: 182px;
+        margin-left: 170px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+
+      #payment {
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 290px;
+        height: 22px;
+        width: 127px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 13px;
+      }
+      .goback {
+        position: absolute;
+        margin-top: -50px;
+        margin-left: 100px;
+        font-family: "Trebuchet MS";
+        font-size: 17px;
+      }
+
+      .goback:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="coffeedessert.html#modal-dprodpic2"
+      ><p class="goback">Go Back</p></a
+    >
+    <div class="d1">
+      <div class="customerform">
+        <h2 class="cfh21">Customer/Order Information</h2>
+        <form action="/submit" method="post" id="customer-form">
+          <label for="firstname" class="fn">Name:</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Last Name"
+            required
+          />
+
+          <label for="address" class="address">Address:</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            required
+            placeholder="Street/Baranggay/Municipality/Province"
+          />
+
+          <label for="email" class="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="mariajuana@example.com"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="d2">
+      <h2 class="d2h21">Your Cart</h2>
+      <h3 class="pname">Hot Chocolate</h3>
+      <p class="p1">Select your cup:</p>
+      <img src="hotcho.png" alt="f1" class="img1" />
+      <select id="cupsize" name="cup-size" onchange="updateTotal()">
+        <option value="selectsize">--</option>
+        <option value="tall">Tall (12oz)</option>
+        <option value="grande">Grande (16oz)</option>
+        <option value="venti">Venti (22oz)</option>
+      </select>
+      <div class="summarysection">
+        <div class="summary-row">
+          <label for="total" class="totaldesc">Price:</label>
+          <div class="total">
+            <input
+              type="text"
+              readonly
+              id="total-display"
+              name="total-display"
+            />
+          </div>
+        </div>
+        <div class="payment-row">
+          <label for="amount" class="amount">Enter Amount:</label>
+          <input
+            type="text"
+            id="amount"
+            name="amount"
+            placeholder="Amount"
+            class="number-field"
+            oninput="calculateChange()"
+          />
+          <label for="change" class="change">Change:</label>
+          <span id="change">0</span>
+          <label for="payment-method" class="payment">Payment:</label>
+          <select id="payment">
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="Gcash">Gcash</option>
+            <option value="Paymaya">Paymaya</option>
+          </select>
+          <button type="button" class="btn1" onclick="submitForm()">
+            Place Order
+          </button>
+          <button type="button" class="btn2" onclick="cancel()">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const prices = {
+        tall: 119,
+        grande: 149,
+        venti: 179,
+      };
+
+      function updateTotal() {
+        const cupSize = document.getElementById("cupsize").value;
+        const total = prices[cupSize] || 0;
+        document.getElementById("total-display").value = total;
+        calculateChange();
+      }
+
+      function calculateChange() {
+        const total =
+          parseFloat(document.getElementById("total-display").value) || 0;
+        const amount = parseFloat(document.getElementById("amount").value);
+
+        // Set change to 0.00 if no amount is entered
+        const change = isNaN(amount) ? 0 : amount - total;
+        document.getElementById("change").innerText = change.toFixed(2); // Display change with two decimal places
+
+        // Update checkout button based on change
+        const checkoutButton = document.querySelector(".btn1");
+        checkoutButton.disabled = isNaN(amount) || amount < total; // Disable if amount is invalid or insufficient
+      }
+
+      function submitForm() {
+        const firstname = document.getElementById("firstname").value;
+        const lastname = document.getElementById("lastname").value;
+        const address = document.getElementById("address").value;
+        const email = document.getElementById("email").value;
+        const cupSize = document.getElementById("cupsize").value;
+        const amountPaid = document.getElementById("amount").value; // Amount entered by the user
+        const change = document.getElementById("change").innerText; // Change amount
+
+        const coffeeFlavor = document.querySelector(".pname").innerText;
+        const paymentMethod = document.getElementById("payment").value;
+
+        // Ensure that all required fields are filled
+        if (
+          firstname &&
+          lastname &&
+          address &&
+          email &&
+          cupSize !== "selectsize"
+        ) {
+          alert(
+            `Order placed!\nName: ${firstname} ${lastname}\nAddress: ${address}\nEmail: ${email}\nCoffee Flavor: ${coffeeFlavor}\nCup Size: ${cupSize}\nPayment Method: ${paymentMethod}\nAmount Paid: ₱${amountPaid}\nChange: ₱${change}`
+          );
+
+          // Confirmation for new order
+          const orderAgain = confirm("Do you want to place another order?");
+          if (orderAgain) {
+            // Reset form for a new order
+            document.getElementById("customer-form").reset();
+            document.getElementById("total-display").value = 0;
+            document.getElementById("amount").value = "";
+            document.getElementById("change").innerText = "0.00"; // Reset change to 0.00
+            document.getElementById("cupsize").selectedIndex = 0;
+          } else {
+            window.location.href = "coffeedessert.html#modal-dprodpic2";
+          }
+        } else {
+          alert(
+            "Please fill in all customer information and select a cup size."
+          );
+        }
+      }
+      function cancel() {
+        window.location.href = "coffeedessert.html#modal-dprodpic2";
+      }
+    </script>
+  </body>
+</html>
